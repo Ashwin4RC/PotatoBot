@@ -83,7 +83,7 @@ def kang(bot: Bot, update: Update, args: List[str]):
         try:
             im = Image.open(kangsticker)
             maxsize = (512, 512)
-            if (im.width and im.height) < 512:
+            if (im.width and im.height) <= 512:
                 size1 = im.width
                 size2 = im.height
                 if im.width > im.height:
